@@ -9,7 +9,7 @@
     </parent>
 
     <version>0.0.1-SNAPSHOT</version>
-    <artifactId>medical-message-analyzer</artifactId>
+    <artifactId>message-analyzer</artifactId>
     <packaging>pom</packaging>
 
     <description>Сервис анализа сообщений</description>

@@ -12,7 +12,7 @@
     </parent>
 
     <packaging>jar</packaging>
-    <artifactId>medical-message-dto</artifactId>
+    <artifactId>message-dto</artifactId>
 
     <dependencies>
         <dependency>
@@ -20,4 +20,5 @@
             <artifactId>common-dto</artifactId>
         </dependency>
     </dependencies>
+
 </project>

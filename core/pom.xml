@@ -12,7 +12,7 @@
     </parent>
 
     <packaging>jar</packaging>
-    <artifactId>medical-message-core</artifactId>
+    <artifactId>message-core</artifactId>
 
     <dependencies>
         <dependency>
@@ -30,21 +30,8 @@
         </dependency>
 
         <dependency>
-            <!--        Эта зависимость тянет компоненты спринга их тоже нужно сканировать-->
             <groupId>liga.medical</groupId>
             <artifactId>common-services</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>liga.medical</groupId>
-            <artifactId>monitoring-core-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>liga.medical</groupId>
-            <artifactId>monitoring-utils</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>liga.medical</groupId>
-            <artifactId>monitoring-dto</artifactId>
         </dependency>
 
     </dependencies>
