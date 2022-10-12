@@ -12,18 +12,13 @@
     </parent>
 
     <packaging>jar</packaging>
-    <artifactId>message-analyzer-utils</artifactId>
+    <artifactId>message-utils</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>liga.medical</groupId>
             <artifactId>common-utils</artifactId>
         </dependency>
-        <dependency>
-            <groupId>liga.medical</groupId>
-            <artifactId>monitoring-dto</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.modelmapper</groupId>
             <artifactId>modelmapper</artifactId>

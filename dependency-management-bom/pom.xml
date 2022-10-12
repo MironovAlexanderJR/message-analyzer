@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>medical-monitoring</artifactId>
+        <artifactId>message-analyzer</artifactId>
         <groupId>liga.medical</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -52,22 +52,22 @@
             </dependency>
             <dependency>
                 <groupId>liga.medical</groupId>
-                <artifactId>medical-message-core-api</artifactId>
+                <artifactId>message-core-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>liga.medical</groupId>
-                <artifactId>medical-message-dto</artifactId>
+                <artifactId>message-dto</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>liga.medical</groupId>
-                <artifactId>medical-message-utils</artifactId>
+                <artifactId>message-utils</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>liga.medical</groupId>
-                <artifactId>medical-message-core</artifactId>
+                <artifactId>message-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
