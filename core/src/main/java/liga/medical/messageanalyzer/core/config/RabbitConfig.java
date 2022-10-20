@@ -1,4 +1,4 @@
-package liga.medical.medicalmonitoring.core.config;
+package liga.medical.messageanalyzer.core.config;
 
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Queue;

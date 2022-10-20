@@ -1,9 +1,9 @@
-package liga.medical.medicalmonitoring.core.controller;
+package liga.medical.messageanalyzer.core.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import liga.medical.medicalmonitoring.core.api.RabbitSenderService;
-import liga.medical.medicalmonitoring.core.config.RabbitConfig;
-import liga.medical.medicalmonitoring.core.model.RabbitMessageDto;
+import liga.medical.messageanalyzer.core.api.RabbitSenderService;
+import liga.medical.messageanalyzer.core.config.RabbitConfig;
+import liga.medical.messageanalyzer.core.model.RabbitMessageDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -1,7 +1,7 @@
-package liga.medical.medicalmonitoring.core.api;
+package liga.medical.messageanalyzer.core.api;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import liga.medical.medicalmonitoring.core.model.RabbitMessageDto;
+import liga.medical.messageanalyzer.core.model.RabbitMessageDto;
 
 public interface RabbitSenderService {
 

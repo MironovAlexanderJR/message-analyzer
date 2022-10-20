@@ -1,4 +1,4 @@
-package liga.medical.medicalmonitoring.core.model;
+package liga.medical.messageanalyzer.core.model;
 
 import lombok.Data;
 
