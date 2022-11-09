@@ -2,8 +2,10 @@ package liga.medical.messageanalyzer.core.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import liga.medical.commondto.Type;
+import liga.medical.messageanalyzer.core.annoatations.dbLog;
 import liga.medical.messageanalyzer.core.api.RabbitSenderService;
-import liga.medical.messageanalyzer.core.model.RabbitMessageDto;
+import liga.medical.messageanalyzer.dto.RabbitMessageFirstDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.AmqpTemplate;
@@ -19,7 +21,13 @@ public class RabbitSenderServiceImpl implements RabbitSenderService {
     private final ObjectMapper objectMapper;
 
     @Override
-    public void sendMessage(RabbitMessageDto messageDto, String queue) throws JsonProcessingException {
+    @dbLog
+    public void sendMessage(RabbitMessageFirstDto messageDto, String queue) throws JsonProcessingException {
+        String type = messageDto.getType();
+        if (!type.equals(Type.ALERT.toString()) && !type.equals(Type.DAILY.toString())) {
+            messageDto.setType("ERROR");
+        }
+
         String messageStr = objectMapper.writeValueAsString(messageDto);
         amqpTemplate.convertAndSend(queue, messageStr);
         log.info("Сообщение {} в очередь {} отправленно.", messageStr, queue);
